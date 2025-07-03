@@ -1,4 +1,4 @@
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
@@ -6,40 +6,40 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Asu Students App",
     description:
-      "A full-stack e-commerce solution with user authentication, payment processing, and admin dashboard.",
+      "A mobile app built with React Native to help university students manage their academic life more efficiently. The app is currently in beta and designed to solve everyday student problems like GPA tracking and class schedule organization.",
     image: "/placeholder.svg?height=300&width=400",
-    technologies: ["Next.js", "TypeScript", "Stripe", "Supabase"],
+    technologies: ["React Native", "TypeScript", "SQLite"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/Natnsis/asu_students_appV2.0",
   },
   {
-    title: "Task Management App",
+    title: "E-commerce Platform",
     description:
-      "A collaborative task management application with real-time updates and team collaboration features.",
+      "An end-to-end ecommerce solution  designed to support both web users. The platform features seamless product browsing, cart management, order placement, and admin controls",
     image: "/placeholder.svg?height=300&width=400",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
+    technologies: ["React.js", "Node.js", "express.js", "MySQL"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/Natnsis/Ecommerce",
   },
   {
-    title: "Weather Dashboard",
+    title: "E-commerce Platform (mobile app)",
     description:
-      "A responsive weather dashboard with location-based forecasts and interactive charts.",
+      "A sleek, cross-platform client-side mobile app built with React Native, designed as the mobile front of our ecommerce platform. It allows users to browse products, manage carts, and simulate the checkout process — all with a responsive and intuitive UI.A responsive weather dashboard with location-based forecasts and interactive charts.",
     image: "/placeholder.svg?height=300&width=400",
-    technologies: ["Vue.js", "Chart.js", "Weather API", "Tailwind CSS"],
+    technologies: ["React Native", "node.js", "express.js", "Tailwind CSS"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/Natnsis/ecommerce_mobile",
   },
   {
     title: "Portfolio Website",
     description:
       "A modern, responsive portfolio website built with Next.js and deployed on Vercel.",
     image: "/placeholder.svg?height=300&width=400",
-    technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
+    technologies: ["Next.js", "Tailwind CSS", "Shadcn ui", "Vercel"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/Natnsis/portfolio",
   },
 ];
 
@@ -73,20 +73,6 @@ export function Projects() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
                     <div className="flex gap-2">
-                      <Button
-                        asChild
-                        size="sm"
-                        className="rounded-full bg-white/90 text-black hover:bg-white"
-                      >
-                        <a
-                          href={project.liveUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <ExternalLink className="h-4 w-4 mr-2" />
-                          Live Demo
-                        </a>
-                      </Button>
                       <Button
                         asChild
                         variant="outline"
@@ -124,33 +110,7 @@ export function Projects() {
                     ))}
                   </div>
                 </CardContent>
-                <CardFooter className="p-6 pt-0 flex gap-3 md:opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Button asChild size="sm" className="rounded-full">
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
-                    </a>
-                  </Button>
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="sm"
-                    className="rounded-full bg-transparent"
-                  >
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
-                </CardFooter>
+                {/* CardFooter removed */}
               </Card>
             ))}
           </div>

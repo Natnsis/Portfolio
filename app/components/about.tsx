@@ -17,17 +17,20 @@ export function About() {
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
                   <p className="text-lg leading-relaxed">
-                    My journey into web development began with curiosity and has
-                    evolved into a passion for creating digital solutions that
-                    make a difference. I believe in writing clean, maintainable
-                    code and staying current with the latest technologies.
+                    My journey into web and mobile development began with
+                    curiosity and has evolved into a passion for building
+                    digital tools that solve real problems — especially in
+                    student and local community spaces. I focus on writing
+                    clean, maintainable code and continuously improving my craft
+                    by staying current with modern technologies like React,
+                    Node.js, and Next.js.
                   </p>
                   <p className="text-lg leading-relaxed">
-                    When I'm not coding, you'll find me exploring new
-                    frameworks, contributing to open-source projects, or sharing
-                    knowledge with the developer community. I'm always excited
-                    to take on new challenges and collaborate on innovative
-                    projects.
+                    When I'm not coding, you'll find me experimenting with new
+                    frameworks, contributing to side projects, or sharing what
+                    I’ve learned on platforms like Telegram. I'm always up for
+                    new challenges, meaningful collaborations, and creating
+                    tools that leave an impact.
                   </p>
                   <div className="space-y-4">
                     <h3 className="text-xl font-semibold">Core Values</h3>
@@ -42,7 +45,9 @@ export function About() {
                 <div className="relative">
                   <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
                     <div className="text-center space-y-4">
-                      <div className="text-4xl font-bold text-primary">3+</div>
+                      <div className="text-4xl font-bold text-primary">
+                        1.5+
+                      </div>
                       <div className="text-sm text-muted-foreground">
                         Years of Experience
                       </div>

@@ -7,14 +7,14 @@ import { ThemeProvider } from "next-themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Your Name - Full-Stack Developer",
+  title: "Natnael Sisay - Full-Stack Developer",
   description:
     "Passionate full-stack developer creating exceptional digital experiences through clean code and innovative solutions.",
   keywords:
-    "web developer, full-stack developer, React, Next.js, TypeScript, portfolio",
-  authors: [{ name: "Your Name" }],
+    "web developer, full-stack developer, React, Next.js, TypeScript, ReactNative",
+  authors: [{ name: "Natnael" }],
   openGraph: {
-    title: "Your Name - Full-Stack Developer",
+    title: "Natnael - Full-Stack Developer",
     description:
       "Passionate full-stack developer creating exceptional digital experiences through clean code and innovative solutions.",
     type: "website",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Name - Full-Stack Developer",
+    title: "Natnael - Full-Stack Developer",
     description:
       "Passionate full-stack developer creating exceptional digital experiences through clean code and innovative solutions.",
   },

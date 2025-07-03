@@ -16,22 +16,15 @@ const skillCategories = [
   },
   {
     title: "Backend",
-    skills: [
-      "Node.js",
-      "Express.js",
-      "Python",
-      "REST APIs",
-      "GraphQL",
-      "Serverless",
-    ],
+    skills: ["Node.js", "Express.js", "PHP", "REST APIs", "MySQL", "Laravel"],
   },
   {
     title: "Databases",
-    skills: ["PostgreSQL", "MongoDB", "Supabase", "Firebase", "Redis"],
+    skills: ["PostgreSQL", "MongoDB", "MySQL", "Firebase"],
   },
   {
     title: "Tools & DevOps",
-    skills: ["Git", "Docker", "AWS", "Vercel", "GitHub Actions", "VS Code"],
+    skills: ["Git", "Vercel", "GitHub Actions", "VS Code", "Postman"],
   },
 ];
 
