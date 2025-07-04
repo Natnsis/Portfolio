@@ -1,11 +1,8 @@
+import { EmailTemplate } from "@/app/components/email-template";
 import { type NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
 
-// This is a placeholder API route for the contact form
-// In production, you would integrate with an email service like:
-// - Resend (recommended for Next.js)
-// - SendGrid
-// - Nodemailer with SMTP
-// - AWS SES
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   try {
@@ -29,29 +26,20 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // TODO: Implement actual email sending logic here
-    // Example with Resend:
-    /*
-    import { Resend } from 'resend'
-    const resend = new Resend(process.env.RESEND_API_KEY)
-    
-    await resend.emails.send({
-      from: 'contact@yourdomain.com',
-      to: 'nsisay49@gmail.com',
+    const { data, error } = await resend.emails.send({
+      from: "contact@natnael.domain.com",
+      to: "nsisay49@gmail.com",
       subject: `Portfolio Contact: ${subject}`,
-      html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Subject:</strong> ${subject}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, '<br>')}</p>
-      `
-    })
-    */
+      react: EmailTemplate({ name, email, subject, message }),
+      replyTo: email,
+    });
 
-    // For now, just log the form data (remove in production)
-    console.log("Contact form submission:", { name, email, subject, message });
+    if (error) {
+      return NextResponse.json(
+        { error: error.message || "Failed to send email" },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json(
       { message: "Message sent successfully" },

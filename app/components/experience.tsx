@@ -4,39 +4,39 @@ import { Briefcase, GraduationCap } from "lucide-react";
 
 const experiences = [
   {
-    title: "Senior Frontend Developer",
-    company: "Tech Solutions Inc.",
+    title: "Internship",
+    company: "Commercial Bank of Ethiopia",
     period: "2022 - Present",
     description:
-      "Led development of responsive web applications using React and Next.js. Collaborated with cross-functional teams to deliver high-quality user experiences.",
+      "Gained hands-on experience working in a structured enterprise environment. I was part of a collaborative team where I learned the importance of clear communication, documentation, and team workflows. While I didn’t work on production-level code, I was exposed to internal systems, development standards, and real-world software processes.",
     achievements: [
-      "Improved application performance by 40%",
-      "Mentored 3 junior developers",
-      "Implemented automated testing reducing bugs by 60%",
+      "Assisted in identifying and reporting bugs in internal software systems",
+      "Created internal documentation and walkthroughs for onboarding and clarity",
+      "Participated in code reviews and team discussions, offering fresh perspectives",
     ],
   },
   {
-    title: "Full Stack Developer",
-    company: "Digital Agency Co.",
-    period: "2021 - 2022",
+    title: "Full Stack Developer (Student)",
+    company: "Final Year Project – ASU",
+    period: "2024",
     description:
-      "Developed and maintained multiple client websites and web applications using modern JavaScript frameworks and backend technologies.",
+      "Led the development of a full-featured ecommerce platform as part of my final year project, delivering both a web and mobile experience using modern full stack technologies. Focused on solving real-world problems with clean, scalable architecture.",
     achievements: [
-      "Delivered 15+ client projects on time",
-      "Reduced server response time by 50%",
-      "Implemented CI/CD pipelines",
+      "Led a team and handled the majority of frontend and backend implementation",
+      "Built both web (React.js + Node.js) and mobile (React Native) versions with SQL integration",
+      "Won 'Best Final Year Project' award for innovation and practical impact",
     ],
   },
   {
-    title: "Junior Web Developer",
-    company: "StartUp Ventures",
-    period: "2020 - 2021",
+    title: "Independent Full Stack Developer",
+    company: "Self-Initiated Projects",
+    period: "2024 – Present",
     description:
-      "Built responsive websites and learned modern development practices while contributing to various startup projects.",
+      "After graduation, I focused on sharpening my full stack skills by building practical web and mobile applications. I worked on personal and community-driven projects, experimenting with modern frameworks and deploying end-to-end solutions.",
     achievements: [
-      "Contributed to 10+ projects",
-      "Learned React, Node.js, and cloud deployment",
-      "Improved code quality through peer reviews",
+      "Built and released the ASU Student App (GPA calculator, schedule planner) in beta",
+      "Practiced advanced concepts like Next.js Server Components and TypeScript",
+      "Improved skills in project structuring, API design, and UI/UX consistency across platforms",
     ],
   },
 ];
@@ -44,8 +44,8 @@ const experiences = [
 const education = [
   {
     degree: "Bachelor of Science in Computer Science",
-    institution: "University of Technology",
-    period: "2016 - 2020",
+    institution: "Assosa University",
+    period: "2021 - 2025",
     description:
       "Focused on software engineering, algorithms, and web development. Graduated with honors.",
     coursework: [
@@ -56,12 +56,29 @@ const education = [
     ],
   },
   {
-    degree: "Full Stack Web Development Bootcamp",
-    institution: "Code Academy",
-    period: "2020",
+    degree: "Networking Essentials Certification",
+    institution: "Cisco Networking Academy",
+    period: "2023",
     description:
-      "Intensive 6-month program covering modern web development technologies and best practices.",
-    coursework: ["React", "Node.js", "MongoDB", "DevOps"],
+      "Completed a foundational course covering core networking concepts, protocols, and infrastructure. Gained hands-on knowledge of how networks operate and how data flows through wired and wireless systems.",
+    coursework: [
+      "IP addressing",
+      "Routing & Switching",
+      "Network security basics",
+      "OSI & TCP/IP models",
+    ],
+  },
+  {
+    degree: "Foundations in AI, Data Analysis, and Android Development",
+    institution: "Udacity",
+    period: "Feb 2025",
+    description:
+      "Completed foundational courses to expand my knowledge across AI, data analysis, and Android development. Built hands-on projects and explored real-world applications in each area.",
+    coursework: [
+      "AI Fundamentals – machine learning concepts, ethical AI",
+      "Data Analysis – data wrangling, visualization, basic statistics",
+      "Android Development – UI components, activity lifecycle, Kotlin basics",
+    ],
   },
 ];
 

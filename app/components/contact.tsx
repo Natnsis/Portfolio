@@ -101,7 +101,7 @@ export function Contact() {
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone className="h-4 w-4 text-muted-foreground" />
-                    <span>Available upon request</span>
+                    <span>+251903259444</span>
                   </div>
                 </CardContent>
               </Card>

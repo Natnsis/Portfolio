@@ -9,7 +9,7 @@ const projects = [
     title: "Asu Students App",
     description:
       "A mobile app built with React Native to help university students manage their academic life more efficiently. The app is currently in beta and designed to solve everyday student problems like GPA tracking and class schedule organization.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/asu_app.jpg",
     technologies: ["React Native", "TypeScript", "SQLite"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/Natnsis/asu_students_appV2.0",
@@ -18,7 +18,7 @@ const projects = [
     title: "E-commerce Platform",
     description:
       "An end-to-end ecommerce solution  designed to support both web users. The platform features seamless product browsing, cart management, order placement, and admin controls",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/ecommerce.png",
     technologies: ["React.js", "Node.js", "express.js", "MySQL"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/Natnsis/Ecommerce",
@@ -27,7 +27,7 @@ const projects = [
     title: "E-commerce Platform (mobile app)",
     description:
       "A sleek, cross-platform client-side mobile app built with React Native, designed as the mobile front of our ecommerce platform. It allows users to browse products, manage carts, and simulate the checkout process — all with a responsive and intuitive UI.A responsive weather dashboard with location-based forecasts and interactive charts.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/ecom_app.jpg",
     technologies: ["React Native", "node.js", "express.js", "Tailwind CSS"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/Natnsis/ecommerce_mobile",
@@ -36,7 +36,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "A modern, responsive portfolio website built with Next.js and deployed on Vercel.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/portfolio.png",
     technologies: ["Next.js", "Tailwind CSS", "Shadcn ui", "Vercel"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/Natnsis/portfolio",
